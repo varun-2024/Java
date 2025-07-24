@@ -64,14 +64,18 @@ int finalmarks = (int)marks;
 Type Promotion
 char ch ='a';
 int num = ch; // Value 97
-If one operand is long, float or double thw whole expression is promoted to long float or double
-Byte, Short or Char treated as Int while evaluating an expression
+If one operand is long, float or double the whole expression is promoted to long float or double(largest data type)
+Byte, Short or Char treated as Int while evaluating an expression.
 
 char h = f-g; // would give error here during conversion char is converted to int and allocating int value in char results in error.
 Another example
 short a = 5;
 byte b = 25;
 char c = 'c';
-byte bt = a + b + c; // Results in Error, a,b & c are converted to int and assigning an Int value to Byte is not possible. Int is 4 bytes and byte is 1 byte.
+byte bt = a + b + c;
+
+Results in Error, a,b & c are converted to int and assigning an Int value to Byte is not possible. Int is 4 bytes and byte is 1 byte. To solve this Typecast it to (byte).
+
+byte bt = (byte)(a + b + c); // Output is not as expected -127 a+b+c = 5 + 25 + 99 = 129 which overflows the range of byte hence result is -127
 
  */
