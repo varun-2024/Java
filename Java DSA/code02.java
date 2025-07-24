@@ -12,5 +12,4 @@ public class code02 {
         double pi = 3.1345; // 8 bytes Big decimal values use double
         short num  = 240; // 2 bytes -32768 to 32767
     }
-    
 }
