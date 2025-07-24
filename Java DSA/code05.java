@@ -83,6 +83,8 @@ float b = 25.25f;
 long c = 35;
 double d = 30;
 double ans = a + b + c + d;
-converts all values to double.
-
+int ans = a + b + c + d; // Gives Error
+converts all values a,b,c & d to double because d is a double datatype.
+They assigns it to the variable ans. If ans is Double then its correct, but if ans in of type int then again results in error until Explicit Casting.
+int ans =(int) (a + b + c + d);
  */
