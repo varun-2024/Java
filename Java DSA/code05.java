@@ -78,4 +78,11 @@ Results in Error, a,b & c are converted to int and assigning an Int value to Byt
 
 byte bt = (byte)(a + b + c); // Output is not as expected -127 a+b+c = 5 + 25 + 99 = 129 which overflows the range of byte hence result is -127
 
+int a =10;
+float b = 25.25f;
+long c = 35;
+double d = 30;
+double ans = a + b + c + d;
+converts all values to double.
+
  */
