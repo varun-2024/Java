@@ -22,5 +22,13 @@ public class code05 {
         System.out.println("Sum of A and B is :" + sum);
     }
 }
+
+/* Conversion :
+1. Type Compatible
+2. Destination DataType > Source Data Type
+Eg.
+int a = 5;
+long b = a;
+ */
 // Byte   >  Short  >  Int     >  Float   >  Long    >   Double
 // 1 byte >  2 Byte >  4 Byte  >  4 Byte  >  8 byte  >   8 byte
