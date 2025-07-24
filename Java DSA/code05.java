@@ -28,7 +28,12 @@ public class code05 {
 2. Destination DataType > Source Data Type
 Eg.
 int a = 5;
-long b = a;
+long b = 10;
+a=b; Error
+b=a; Correct
+
+
+vice versa is not possible it generates error Lossy Conversion
  */
 // Byte   >  Short  >  Int     >  Float   >  Long    >   Double
 // 1 byte >  2 Byte >  4 Byte  >  4 Byte  >  8 byte  >   8 byte
