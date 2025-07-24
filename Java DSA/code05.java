@@ -20,6 +20,10 @@ public class code05 {
         
         float sum = a + b + c + + e;
         System.out.println("Sum of A and B is :" + sum);
+        
+        System.out.println("Enter the value of Radius:");
+        int radius = (int)sc.nextFloat();
+        System.out.println(radius);
     }
 }
 
@@ -31,12 +35,14 @@ int a = 5;
 long b = 10;
 a=b; Error
 b=a; Correct
-
-
 vice versa is not possible it generates error Lossy Conversion
  */
-//Traveling Left to Right Possible by not other way around
-// >->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->
-// Byte   >  Short  >  Int     >  Float   >  Long    >   Double
-// 1 byte >  2 Byte >  4 Byte  >  4 Byte  >  8 byte  >   8 byte
-//<-<-<-<-<-<-<-<-<-<-NOT POSSIBLE<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-
+
+/* 
+Widening Conversion or Implicit Conversion
+Traveling Left to Right Possible by not other way around
+ >->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->
+ Byte   >  Short  >  Int     >  Float   >  Long    >   Double
+ 1 byte >  2 Byte >  4 Byte  >  4 Byte  >  8 byte  >   8 byte
+<-<-<-<-<-<-<-<-<-<-NOT POSSIBLE<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-
+ */
