@@ -35,5 +35,8 @@ b=a; Correct
 
 vice versa is not possible it generates error Lossy Conversion
  */
+//Traveling Left to Right Possible by not other way around
+// >->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->
 // Byte   >  Short  >  Int     >  Float   >  Long    >   Double
 // 1 byte >  2 Byte >  4 Byte  >  4 Byte  >  8 byte  >   8 byte
+//<-<-<-<-<-<-<-<-<-<-NOT POSSIBLE<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-
