@@ -24,6 +24,15 @@ public class code05 {
         System.out.println("Enter the value of Radius:");
         int radius = (int)sc.nextFloat();
         System.out.println(radius);
+
+        char f ='f';
+        char g = 'g';
+        System.out.println((int)f);
+        System.out.println((int)g);
+        System.out.println(f);
+        System.out.println(c-g-f);
+        //char h = f-g; // would give error here during conversion char is converted to int and allocating int value in char results in error.
+        //System.out.println(h);
     }
 }
 
@@ -39,10 +48,30 @@ vice versa is not possible it generates error Lossy Conversion
  */
 
 /* 
+Type Conversion
 Widening Conversion or Implicit Conversion
 Traveling Left to Right Possible by not other way around
  >->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->
  Byte   >  Short  >  Int     >  Float   >  Long    >   Double
  1 byte >  2 Byte >  4 Byte  >  4 Byte  >  8 byte  >   8 byte
 <-<-<-<-<-<-<-<-<-<-NOT POSSIBLE<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-
+
+
+Type Casting : Narrowing Conversion Explicit Conversion
+float marks = 36.98;
+int finalmarks = (int)marks;
+
+Type Promotion
+char ch ='a';
+int num = ch; // Value 97
+If one operand is long, float or double thw whole expression is promoted to long float or double
+Byte, Short or Char treated as Int while evaluating an expression
+
+char h = f-g; // would give error here during conversion char is converted to int and allocating int value in char results in error.
+Another example
+short a = 5;
+byte b = 25;
+char c = 'c';
+byte bt = a + b + c; // Results in Error, a,b & c are converted to int and assigning an Int value to Byte is not possible. Int is 4 bytes and byte is 1 byte.
+
  */
