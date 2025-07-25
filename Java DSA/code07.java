@@ -7,5 +7,4 @@ public class code07 {
         float area = side * side;
         System.out.println("Area of the Square = " + area);
     }
-    
 }
